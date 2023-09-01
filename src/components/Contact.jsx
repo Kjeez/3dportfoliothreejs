@@ -26,16 +26,16 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_366l3vg',
-    'template_z5tunua',
+    emailjs.send('',
+    '',
     {
       from_name: form.name,
-      to_name: 'Kunal',
+      to_name: '',
       from_email: form.email,
-      to_email: 'contact@webalchemy.in',
+      to_email: '',
       message: form.message,
     },
-    'AL3rHXPk6d-tYOR3v'
+    'secretkeyformails'
     )
     .then((result) => {
       setLoading(false);
@@ -124,8 +124,8 @@ const Contact = () => {
         <EarthCanvas/>
       </motion.div>  
     </div>
-    <p className="text-center text-white mt-10">contact@webalchemy.in & +917838583051</p>
-    <p className="text-center text-white mt-5">2023 Web Alchemy. All rights reserved.</p>
+    <p className="text-center text-white mt-10">contact info</p>
+    <p className="text-center text-white mt-5">contact info</p>
     </div>
     
   )
